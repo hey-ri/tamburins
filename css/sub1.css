@@ -1,0 +1,76 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Raleway', sans-serif; 
+font-family: 'Libre Baskerville', serif;*/
+
+
+body{ font-family: 'Noto Sans KR', sans-serif; position: relative;/* 탑버튼 떄문에 */}
+.container{ width: 1098px; margin: 0 auto; position: relative;}
+
+li.on a{ color: red;}
+/* all_menu */
+.all_menu{ position: fixed; width: 100%; height: 100%; box-sizing: border-box; padding-top: 120px; top: 0; left: 0; z-index: 100; background: url(../images/bg_gnb_all.png); background-size: cover; display: none;}
+.all_menu ul.depth1{ width: 1000px; margin: 0 auto; overflow: hidden; letter-spacing: -1px; display: flex; text-align: center;} 
+.all_menu ul.depth1>li{ width: 20%;}
+.all_menu ul.depth1>li> a{ display: block; width: 100%; font-size: 24px; color: #f5f5f5; line-height: 5; border-bottom: 1px solid rgba(81,81,81,0.1);}
+.all_menu ul.depth1>li> ul.depth2{ padding-top: 40px; width: 100%;}
+.all_menu ul.depth1>li> ul.depth2>li{ line-height: 2.5; color: #f5f5f5; width: 100%; position: relative;}
+.all_menu ul.depth1>li> ul.depth2>li>a{ display: block; width: 100%; box-sizing: border-box; padding-left: 10px; }
+.all_menu ul.depth1>li> ul.depth2>li>a::before{ content: ''; width: 3px; height: 2px; background: red; position: absolute; left: 0; top: 19px; display: none;}
+.all_menu ul.depth1>li> ul.depth2>li:hover>a::before{ display: block;}
+
+/* header */
+header{ width: 100%; height: 120px; font-size: 16px; color: #444343; position: fixed; z-index: 101; background: #fff;}
+header h1{ width: 250px; height: 120px; text-indent: -9999999px; position: absolute; left: 50%; top: 0; transform: translateX(-50%); text-align: center;}
+header h1 a{ display: block; width: 100%; height: 100%; background: url(../images/favicon_192.png) center no-repeat ; background-size: 210px;}
+header nav ul{ display: flex;}
+header nav ul li{ line-height: 120px; margin-right: 70px;}
+header nav ul li:nth-child(4){ margin-left: 340px;}
+
+header ul.l_box{ position: absolute; right: 50px; top: 45px;}
+header ul.l_box li{ width: 70px; height: 26px; box-sizing: border-box; border: 1px solid #d7d7d7; background: #fff; line-height: 26px; padding-left: 10px; position: relative;/* 폰트어썸 움직ㅇ려고 */}
+header ul.l_box li.bt0{ border-top: 0; display: none;}
+header ul.l_box li i{ font-size: 12px; position: absolute; right: 10px; top: 8px; color: #ccc;}
+
+header ul.ham{ width: 26px; height: 26px; position: absolute; right: 0; top: 45px; cursor: pointer;}
+header ul.ham li{ width: 50%; height: 1px; background: #000; margin-bottom: 12px; margin-left: 50%;}
+header ul.ham li:nth-child(2){width: 100%; margin-left: 0;}
+header ul.ham2{ width: 26px; height: 36px; position: absolute;/* 컨테이너 기준 */ right: 0; top: 58px; cursor: pointer; display: none;}
+header ul.ham2 li{ width: 120%; height: 1px; background: #000; margin-bottom: 12px; margin-left: 50%; position: absolute; left: -15px; top: 0;}
+header ul.ham2 li:nth-child(1){ transform: rotate(45deg);}
+header ul.ham2 li:nth-child(2){ transform: rotate(-45deg);}
+
+
+/* main */
+main{ padding: 100px 0;}
+main h3{ font-size: 24px; text-align: center; color: 333; padding: 100px 0 10px 0;}
+main p{ text-align: center; }
+main #map{  width: 1000px; height: 500px; margin: 50px auto 50px auto;}
+
+
+/* footer */
+footer{ width: 100%; height: 372px; background: #1e191b; color: #fff; box-sizing: border-box; padding-top: 80px; overflow: hidden;}
+footer .container{ display: flex; }
+footer .contact_us{ font-size: 17px; }
+footer .contact_us span{ font-weight: bold;}
+footer .contact_us p{ font-size: 38px; margin: 30px 0;}
+footer .contact_us b{ color: #6c6c6c;}
+footer .contact_us i{ color: #aaa8ab;}
+footer .contact_us button{ display: block; font-size: 14px; width: 120px; height: 44px; background-color: transparent; color: #fff; border: 1px solid #fff; margin-top: 40px; }
+footer .con{ margin-left: 120px;} 
+footer .con p{ font-weight: bold; font-size: 16px; }
+footer .con ul{ font-size: 14px; width: 350px; overflow: hidden; margin-top: 26px; margin-bottom: 68px; }
+footer .con ul li{ float: left; letter-spacing: -1px; line-height: 1.8; font-weight: bold;}
+footer .con ul li.ml{ margin-left: 10px;}
+footer .con ul li:nth-child(even){ color: #aaa8ab;}
+footer .con ul li.clear{ clear: both;}
+footer .con em{ font-size: 13px; color: #616061; font-weight: bold; } 
+footer .family{ margin-left: auto;/* 플렉스일때 맨 오른쪽으로 보내기 가능 left 주니까 */ position: relative; width: 200px; height: 46px;}
+footer .family p{ width: 200px; height: 46px; box-sizing: border-box; border: 1px solid #615f5f; font-size: 14px; color: #fff; padding-left: 20px; line-height: 44px; font-weight: bold;}
+footer .family p i{ display: inline-block; margin-left: 60px; font-size: 14px; color: #615f5f; }
+footer .family p.none{ display: none; position: absolute; left: 0 ;bottom: 46px; background: #fdfdfd; color: #666;}
+footer .family p.none a{ width: 100%; height: 100%; display: block;}
+
+aside.top{ width: 40px; height: 40px; border-radius: 50%; background: #555; color: #fff; font-size: 20px; text-align: center; line-height: 35px; position: absolute;/* 바디기준 */ bottom: 352px; right: 50%; margin-right: -549px; cursor: pointer;}

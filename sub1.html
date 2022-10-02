@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="탬버린즈">
+    <meta name="keywords" content="tamburins, handcream, sanitizer">
+    <meta name="author" content="hyeri">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temburins</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/sub1.css" type="text/css">
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="icon" type="image/png" href="images/favicon_192.png" sizes="192x192">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="js/top.js" defer></script>
+</head>
+
+<body>
+
+    <div class="all_menu">
+        <ul class="depth1">
+            <li><a href="#">탬버린즈</a>
+                <ul class="depth2">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">연혁</a></li>
+                    <li><a href="#">CI</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                </ul><!-- //.depth2 -->
+            </li>
+            <li><a href="#">브랜드소개</a>
+                <ul class="depth2">
+                    <li><a href="#">젠틀몬스터</a></li>
+                    <li><a href="#">태버린즈</a></li>
+                    <li><a href="#"></a></li>
+                </ul><!-- //.depth2 -->
+            </li>
+            <li><a href="#">제품소개</a>
+                <ul class="depth2">
+                    <li><a href="#">베스트셀러</a></li>
+                    <li><a href="#">샤워리바디</a></li>
+                    <li><a href="#">튜브핸드</a></li>
+                    <li><a href="#">올팩티브 캔들</a></li>
+                    <li><a href="#">퍼품핸드</a></li>
+                    <li><a href="#">체인핸드</a></li>
+                    <li><a href="#">손소독제</a></li>
+                    <li><a href="#">핸드앤바디</a></li>
+                    <li><a href="#">멀티프래그런스</a></li>
+                    <li><a href="#">아이 툴</a></li>
+                </ul><!-- //.depth2 -->
+            </li>
+            <li><a href="#">매장안내</a>
+                <ul class="depth2">
+                    <li class="on"><a href="sub1.html">오프라인 판매처</a></li>
+                    <li><a href="sub1.html">온라인 판매처</a></li>
+                </ul><!-- //.depth2 -->
+            </li>
+            <li><a href="#">홍보</a>
+                <ul class="depth2">
+                    <li><a href="#">선물추천</a></li>
+                    <li><a href="#">샘플키드</a></li>
+                    <li><a href="#">향 오브젝트</a></li>
+                    <li><a href="#">전시장</a></li>
+                </ul><!-- //.depth2 -->
+            </li>
+        </ul><!-- //.depth1 -->
+    </div><!-- //.all_menu -->
+
+    <header>
+        <div class="container">
+            <h1><a href="index.html">탬버린즈</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">탬버린즈</a></li>
+                    <li><a href="#">브랜드 소개</a></li>
+                    <li><a href="#">제품소개</a></li>
+                    <li class="on"><a href="sub1.html">매장안내</a></li>
+                    <li><a href="#">홍보</a></li>
+                </ul>
+            </nav>
+            <ul class="l_box">
+                <li><a href="#">KR</a><i class="fa fa-caret-down" aria-hidden="true"></i></li>
+                <li class="bt0"><a href="#">EN</a><i class="fa fa-caret-right" aria-hidden="true"></i></li>
+                <li class="bt0"><a href="#">CH</a><i class="fa fa-caret-right" aria-hidden="true"></i></li>
+            </ul><!-- //.l_box -->
+
+            <ul class="ham">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul><!-- //.ham -->
+            <ul class="ham2">
+                <li></li>
+                <li></li>
+            </ul><!-- //.ham2 -->
+        </div><!-- //.container -->
+    </header>
+
+    <main class="contents">
+        <h3>위치 보기</h3>
+        <p> 서울특별시 강남구 신사동 520-9</p>
+        <article>
+            <div id="map"></div>
+        </article>
+        
+    </main><!-- //.contents -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3b8dd06697d2c7472ac1706af4354999"></script>
+    <script>
+        var container = document.getElementById('map');
+        var options = {
+            center: new kakao.maps.LatLng(37.5206, 127.0221),
+            level: 3
+        };
+
+        var map = new kakao.maps.Map(container, options);
+    </script>
+
+    <footer>
+        <div class="container">
+            <div class="contact_us">
+                <span>CONTACT US</span>
+                <p>이메일: <b>kzzeryy@naver.com</b></p>
+                <i>사업자등록번호: 119-86-38589 </i>
+                <button type="button">고객문의</button>
+            </div><!-- //.contact_us -->
+            <div class="con">
+                <p>주)아이아이컴바인드</p>
+                <ul>
+                    <li>사업자등록번호 :</li>
+                    <li>119-86-38589</li>
+                    <li class="ml">대표번호 :</li>
+                    <li>1644-1246</li>
+                    <li class="clear">Add :</li>
+                    <li>제 2014-서울마포-1050 호 (사업자정보확인)</li>
+                    <li>대표자 :</li>
+                    <li>김한국</li>
+                    <li class="ml">개인정보 보호 책임자 :</li>
+                    <li>박세진</li>
+                </ul>
+                <em>Copyright © 2022 kwonhyeri. All Rights Reserved.</em>
+            </div><!-- //.con -->
+            <div class="family">
+                <p>패밀리사이트<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                <p class="none"><a href="#">젠틀몬스터</a></p>
+            </div><!-- //.family -->
+        </div><!-- //.container -->
+    </footer>
+
+    <aside class="top">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </aside>
+</body>
+
+</html>
